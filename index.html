@@ -1,1 +1,29 @@
+<!-- Ujirani - HTML/CSS + Backend (with live geolocation) and Animations -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Ujirani - Community Empowerment</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ujirani - Community Empowerment</h1>
+      <form id="reportForm">
+        <input type="text" id="title" placeholder="Issue title" required />
+        <textarea
+          id="description"
+          placeholder="Describe the issue..."
+          required
+        ></textarea>
+        <input type="hidden" id="location" />
+        <button type="submit">Report Issue</button>
+      </form>
+      <h2>Reported Issues</h2>
+      <div id="issuesContainer"></div>
+    </div>
 
+    <script src="script.js"></script>
+  </body>
+</html>
